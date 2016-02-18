@@ -1,0 +1,23 @@
+<template name="home">
+    <h1>This is HOME</h1>
+
+    {{#each prices}}
+        <h1 class="name">{{name}}</h1>
+        <table class="price_table">
+            <tr>
+                <th>ID</th>
+                <th>Bid</th>
+                <th>Ask</th>
+                <th>Last</th>
+                <th>Volume</th>
+            </tr>
+            <tr id="{{_id}}">
+                <td>{{bid}}</td>
+                <td>{{ask}}</td>
+                <td>{{last}}</td>
+                <td>{{volume}}</td>
+            </tr>
+        </table>
+    {{/each}}
+
+</template>
